@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomulario</title>
+</head>
+<body>
+    <form action="controlador" > 
+
+        <di> 
+            <label for="edad">dijite su edad</label>
+            <input type="number" step="1" min="0" max="20" value="3" name="edad"  disabled>
+        </di>
+
+        <div>
+            <label for="nombre12">nombre</label>
+            <input type="text" id="nombre12"  name="nombre" required placeholder="ingrese nombre" autofocus autocomplete="off">
+        </div>
+
+        <div> 
+            <label for="colores">selecion color</label>
+            <input type="color">
+        </div>
+
+        <div>
+            <label for="telefono">ingrese su telefono</label>
+            <input type="text" id="telefono"  name="tell" required placeholder="Eje: 3124567998" pattern=[0-9{1,10}>
+        
+        </div>
+        <div>
+            <label for="correo">ingrese su correo</label>
+            <input type="text" id="telefono"  name="tell" required placeholder="Eje: 3124567998" pattern=[+@+]{1,10}>
+        
+        </div>
+   
+        <button type="submit">guardar</button>
+    </form>
+</body>
+</html>
