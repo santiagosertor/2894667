@@ -1,0 +1,329 @@
+<html>
+    <head>
+     <center><h1>Formulario</h1></center>
+    </head>
+    <body>
+        <form action="controlador" method="get" enctype="multipart/form-data" > 
+
+            <di> 
+                <label for="edad">dijite su edad</label>
+                <input  step="1" min="14" max="20" pattern="{0,9}{1-3}" value="3" name="edad" >
+            </di>
+    
+            <div>
+                <label for="nombre12">nombre</label>
+                <input  id="nombre12"  name="nombre" min="0" max="30" required placeholder="ingrese nombre" pattern="[6-30]"  autocomplete="on">
+            </div>
+    
+            <div> 
+                <label for="colores">selecion color</label>
+                <input type="color">
+            </div>
+    
+            <div>
+                <label for="telefono">ingrese su telefono</label>
+                <input  id="telefono"  name="tell" min="0" max="15" required placeholder="Eje: 3124567998" pattern="[0-9]{6,15}" autocomplete="on">
+            
+            </div>
+            <div>
+                <label for="correo">ingrese su correo</label>
+                <input  id="correo electronico"  name="correo" min="0" max="25" required placeholder="Ejemplos132@gmail.com" pattern=[a-zA-Z0-9_+-]+@[a-zA-Z0-9_/.]{5,25}>
+            
+            </div>
+                <div>
+                    <label form="ciudad ">seleciona ciudad</label>
+                    <select name="ciudad" id="ciudad">
+                    <option value="1">Giron</option>
+                    <option value="2"  >bucaramanga</option>
+                    <option value="3" selected>Florida</option>
+                </select>
+                </div>
+                <div>
+                        <label>
+                        <input type="radio" name="genero"  value="mujer">mujer
+                    </label>
+                    <label>
+                        <input type="radio" name="genero"  value="hombre" checked>hombre
+                    </label>
+                </div>
+    
+                <div>
+                    <label>
+                    <input type="checkbox" name="Habilidad" value="HTML" checked> HTML
+                    </label>
+                    <label>
+                      <input type="checkbox" name="Habilidad" value="GIT" checked> GIT
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Habilidad" value="CLI" checked> CLI
+                     </label>
+                     <label>
+                        <input type="checkbox" name="Habilidad" value="Js"> Js
+                    </label>
+                </div>
+                <div>
+                    <label>
+                    <input type="file" accept="image/* .pdf,jpg,png" checked> img o documnet 
+                   </label>
+                </div>
+            <button type="submit">guardar</button>
+        </form>
+        <section>
+            <table border="1">
+                <thead>
+                    <th>
+                        nombre
+                    </th>
+                    <th>
+                        correo
+                    </th>
+                    <th>
+                        numero
+                    </th>
+                    <th>
+                        ciudad
+                    </th>
+                    <th>
+                        accion
+                    </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>santiago alejandro</td>
+                        <td>santi2005@gmail.com</td>
+                        <td>34095532</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>helder amado</td>
+                        <td>helderfelipe@gmail.com</td>
+                        <td>32100033</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>marcos dias</td>
+                        <td>marcosdiaz@gmail.com</td>
+                        <td>340953023</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>lucas forgert</td>
+                        <td>lucasfort@gmail.com</td>
+                        <td>32300344</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>matias rojas</td>
+                        <td>matias203@gmail.com</td>
+                        <td>34096788</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>jose castro</td>
+                        <td>josemutis@gmail.com</td>
+                        <td>394934342</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>marthin rojas</td>
+                        <td>marthin@gmail.com</td>
+                        <td>320033443</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>juan diego</td>
+                        <td>diegojuan@gmail.com</td>
+                        <td>33023232</td>
+                        <td>piedecuesta</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>juanesteban</td>
+                        <td>estebanjuan@gmail.com</td>
+                        <td>40932232</td>
+                        <td>Florida</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>jefieresteban</td>
+                        <td>jefier453@gmail.com</td>
+                        <td>209343223</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>gabrielduran</td>
+                        <td>durangavi@gmail.com</td>
+                        <td>323455666</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>soniadelgada</td>
+                        <td>soniamada@gmail.com</td>
+                        <td>320012434</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>luis hernandez</td>
+                        <td>luiscarlos@gmail.com</td>
+                        <td>321021212</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>marianadiaz</td>
+                        <td>diazmari@gmail.com</td>
+                        <td>320054343</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>stefany duran</td>
+                        <td>duranduarte@gmail.com</td>
+                        <td>345332323</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>victor manuel</td>
+                        <td>victor454@gmail.com</td>
+                        <td>324555356</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>reinel david</td>
+                        <td>davidreinel@gmail.com</td>
+                        <td>312234345</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>dilan felipe</td>
+                        <td>felipedilan@gmail.com</td>
+                        <td>3132445354</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>wilson delgado</td>
+                        <td>wilianso@gmail.com</td>
+                        <td>3498532</td>
+                        <td>bucaramanga</td>
+                        <td>
+                            <button type="submit">enviar</button>
+                            <a href="index.html">editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tboddy>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">manual-signature-for-documents-on-white-background-hand-drawn-calligraphy-lettering-vector-illustration</td>
+                        </tr>
+                    </tfoot>
+                </tboddy>
+                
+            </table>
+        </section>
+    </body>
+</html>
